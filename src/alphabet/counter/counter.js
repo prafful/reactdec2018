@@ -6,18 +6,12 @@ class Counter extends React.Component {
        this.state = {
            counterValue :0
         } 
-
         this.counterUtil = this.counterUtil.bind(this)
-
    }
-
     counterUtil(){
         console.log("Button Clicked");
         this.setState({counterValue: this.state.counterValue + 1})
     }
-
-
-
     render() { 
         return ( 
             <div>

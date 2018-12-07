@@ -4,6 +4,9 @@ import AppComponent from './AppComponent';
 import Parent from './family/parent';
 import Alphabet from './alphabet/alphabet';
 import Counter from './alphabet/counter/counter';
+import LifeCycle from './lifecycle/lifecycle';
+import RemoteAPIData from './remote/apiData';
+import ParentForm from './forms/parentForm';
 
 ReactDOM.render(<div>
                 <AppComponent></AppComponent>
@@ -24,6 +27,14 @@ ReactDOM.render(<div>
                 <Alphabet fcolor="red" bcolor="yellow">W</Alphabet>
                 <hr></hr>
                 <Counter></Counter>
-
+                <hr></hr>
+               
                 </div>,
                 document.getElementById("root"))
+
+
+ReactDOM.render(<LifeCycle></LifeCycle>, document.getElementById("life"))                
+
+ReactDOM.render(<RemoteAPIData></RemoteAPIData>, document.getElementById('remote'))
+
+ReactDOM.render(<ParentForm></ParentForm>, document.getElementById("form"))
